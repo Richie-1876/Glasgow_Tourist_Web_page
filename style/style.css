@@ -19,7 +19,10 @@ header > h1 {
   padding-left: 15px;
 }
 main {
-  height: 100vh;
+  /* height: 100vh; */
+}
+body {
+  background-color: #171b69;
 }
 /*====================================== 
             MAIN NAV
@@ -139,7 +142,7 @@ ul {
 }
 #main-sport {
   display: flex;
-  height: 80%;
+  height: 80vh;
 }
 #main-sport > img {
   position: absolute;
@@ -167,6 +170,42 @@ ul {
 }
 #also {
   font-size: small;
+}
+/*====================================== 
+            MAIN SECTION FOOD
+======================================*/
+#fourpics {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+#fourpics > img {
+  width: 24%;
+  height: 100%;
+}
+#twopics {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+#twopics > img {
+  width: 49%;
+  height: 100%;
+}
+#food-text {
+  background-color: #2e9cca;
+  color: #feffff;
+  text-align: center;
+  font-size: 30px;
+  margin: 100px 0 0 0;
+  padding: 20px;
+  height: 30vh;
 }
 /*====================================== 
             MAIN FOOTER
