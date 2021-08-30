@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+
     <title>Glasgow |Home|</title>
   </head>
   <body>
@@ -19,38 +20,130 @@
     <nav id="main-nav">
       <ul>
         <li><a href="home.html">Home</a></li>
-        <li><a href="sights.html">Sites</a></li>
+        <li><a href="sights.html">Sights</a></li>
         <li><a href="sport.html">Sport</a></li>
         <li><a href="culture.html">Culture</a></li>
         <li><a href="food.html" class="active-page">Food</a></li>
       </ul>
     </nav>
     <main>
-      <section id="picture-gallery" class="container">
-        <div id="fourpics">
+      <section id="picture-gallery" class="gallery">
+        <div class="gallery-item">
+          <input
+            type="radio"
+            id="img-1"
+            checked
+            name="gallery"
+            class="gallery__selector"
+          />
           <img
+            class="gallery-img"
             src="images/IRN-BRU_2016_logo.jpeg"
             alt="Orange and blue Irn bru logo"
           />
-          <img
-            src="images/Haggis_img.jpeg"
-            alt="Haggis neeps and tatties in a white bowl"
+          <label for="img-1" class="gallery-thumbnail">
+            <img
+              src="images/IRN-BRU_2016_logo.jpeg"
+              alt="Orange and blue Irn bru logo"
+            />
+          </label>
+        </div>
+        <div class="gallery-item">
+          <input
+            type="radio"
+            id="img-2"
+            checked
+            name="gallery"
+            class="gallery__selector"
           />
           <img
+            class="gallery-img"
             src="images/battered-deep-fried-mars-bar_img.png"
             alt="deep fried mars bar"
           />
-          <img src="images/tattie.jpeg" alt="A pile of tattie scones" />
+          <label for="img-2" class="gallery-thumbnail">
+            <img
+              src="images/battered-deep-fried-mars-bar_img.png"
+              alt="deep fried mars bar"
+            />
+          </label>
         </div>
-        <div id="twopics">
+        <div class="gallery-item">
+          <input
+            type="radio"
+            id="img-3"
+            checked
+            name="gallery"
+            class="gallery__selector"
+          />
           <img
+            class="gallery-img"
+            src="images/tattie.jpeg"
+            alt="A pile of tattie scones"
+          />
+          <label for="img-3" class="gallery-thumbnail">
+            <img src="images/tattie.jpeg" alt="A pile of tattie scones" />
+          </label>
+        </div>
+        <div class="gallery-item">
+          <input
+            type="radio"
+            id="img-4"
+            checked
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img
+            class="gallery-img"
+            src="images/Haggis_img.jpeg"
+            alt="Haggis neeps and tatties in a white bowl"
+          />
+          <label for="img-4" class="gallery-thumbnail">
+            <img
+              src="images/Haggis_img.jpeg"
+              alt="Haggis neeps and tatties in a white bowl"
+            />
+          </label>
+        </div>
+        <div class="gallery-item">
+          <input
+            type="radio"
+            id="img-5"
+            checked
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img
+            class="gallery-img"
             src="images/tunnock_tea_cake_img.jpg"
             alt="Tunnocks tea cakes in a box"
           />
+          <label for="img-5" class="gallery-thumbnail">
+            <img
+              src="images/tunnock_tea_cake_img.jpg"
+              alt="Tunnocks tea cakes in a box"
+            />
+          </label>
+        </div>
+        <div class="gallery-item">
+          <input
+            type="radio"
+            id="img-6"
+            checked
+            name="gallery"
+            class="gallery__selector"
+          />
           <img
+            class="gallery-img"
             src="images/scotch_img.jpeg"
             alt="Collection of scotch whisky on a white background"
           />
+          <label for="img-6" class="gallery-thumbnail">
+            <img
+              src="images/scotch_img.jpeg"
+              alt="Collection of scotch whisky on a white background"
+            />
+          </label>
         </div>
       </section>
       <section id="food-text">

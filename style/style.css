@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header,
 footer {
@@ -19,10 +20,10 @@ header > h1 {
   padding-left: 15px;
 }
 main {
-  /* height: 100vh; */
+  height: 100vh;
 }
 body {
-  background-color: #171b69;
+  background-color: #25274d;
 }
 /*====================================== 
             MAIN NAV
@@ -59,7 +60,6 @@ ul {
 }
 .active-page {
   background-color: #83d4f7;
-  /* color: white; */
 }
 /*====================================== 
             MAIN SECTION HOME
@@ -75,7 +75,6 @@ ul {
   position: absolute;
   left: 60px;
   top: 300px;
-  /* background-color: rgba(2, 2, 2, 0.05); */
   padding: 10px;
   color: #feffff;
   font-size: 100px;
@@ -148,10 +147,10 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%); */
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 100;
   height: 60%;
@@ -174,38 +173,64 @@ ul {
 /*====================================== 
             MAIN SECTION FOOD
 ======================================*/
-#fourpics {
-  width: 90%;
-  margin: 15px auto;
+#picture-gallery {
+  height: 60vh;
+}
+#picture-gallery img {
+  width: 100%;
+  vertical-align: top;
+}
+label > img {
+  width: 100px;
+  height: 100px;
+}
+.gallery {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px;
+  margin: 10px auto 5px auto;
+  width: 900px;
+  position: relative;
+  padding-top: 625px;
+
+  @media screen and (min-width: $max-img-width) {
+    padding-top: $max-img-height;
+  }
 }
-#fourpics > img {
-  width: 24%;
-  height: 100%;
+
+.gallery-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 0 0 3px #2e9cca;
+  transition: opacity 0.3s ease-in-out;
 }
-#twopics {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  flex-wrap: wrap;
+.gallery-thumbnail {
+  padding-top: 6px;
+  margin: 0 15px;
+  display: block;
 }
-#twopics > img {
-  width: 49%;
-  height: 100%;
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery__selector:checked + .gallery-img {
+  opacity: 1;
+}
+.gallery__selector:checked ~ .gallery-thumbnail > img {
+  box-shadow: 0 0 0 3px #2e9cca;
 }
 #food-text {
   background-color: #2e9cca;
   color: #feffff;
   text-align: center;
-  font-size: 30px;
-  margin: 100px 0 0 0;
+  font-size: 25px;
+  margin: 150px 0 0 0;
   padding: 20px;
-  height: 30vh;
+  height: 25vh;
 }
 /*====================================== 
             MAIN FOOTER
@@ -297,5 +322,19 @@ footer > a {
   }
   #main-sport img {
     width: 80%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #food-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #food-text {
+    font-size: 15px;
+  }
+  .gallery {
+    width: 90%;
   }
 }
