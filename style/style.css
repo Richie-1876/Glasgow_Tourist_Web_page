@@ -45,7 +45,7 @@ body {
 }
 #main-nav > ul a:hover {
   color: white;
-  background-color: #171b69;
+  background-color: #25274d;
 }
 #main-nav > ul a:active {
   color: rgb(212, 18, 18);
@@ -83,10 +83,15 @@ ul {
   background-color: #2e9cca;
   color: #feffff;
   text-align: center;
-  font-size: 30px;
+  font-size: 90px;
   margin: 0;
-  padding: 20px;
+  padding: 40px 20px;
   height: 30vh;
+}
+#home-text > p {
+  text-align: center;
+  margin: 0 30px;
+  font-size: 30px;
 }
 /*====================================== 
             MAIN SECTION SIGHTS
@@ -310,9 +315,9 @@ footer > a {
 /*====================================== 
             MEDIA QUERIES
 ======================================*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 966px) {
   #home-text > p {
-    font-size: 20px;
+    font-size: 25px;
   }
   #desc > p {
     font-size: 19px;
@@ -322,6 +327,14 @@ footer > a {
   }
   #main-sport img {
     width: 80%;
+  }
+}
+@media screen and (max-width: 666px) {
+  #home-text > p {
+    font-size: 20px;
+  }
+  .site-item p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1400px) {
