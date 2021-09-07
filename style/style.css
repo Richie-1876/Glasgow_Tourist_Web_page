@@ -237,6 +237,10 @@ label > img {
   padding: 20px;
   height: 25vh;
 }
+
+#food-text p {
+  padding-top: 25px;
+}
 /*====================================== 
             MAIN FOOTER
 ======================================*/
